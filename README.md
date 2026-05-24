@@ -1,0 +1,166 @@
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2043f7b9-b53c-4899-bd5a-4963e7997e9b" alt="ApeX Nuker banner" /> 
+</p>
+
+<p align="center">
+  <b>ApeX Nuker</b><br>
+  Python 3.10+ • py-cord 2.6.0+
+</p> 
+
+<p align="center">
+  <a href="#"><img src="https://img.shields.io/badge/contributors-1-brightgreen"></a>
+  <a href="#"><img src="https://img.shields.io/badge/issues-0%20open-brightgreen"></a>
+  <a href="#"><img src="https://img.shields.io/badge/PRs-welcome-blue"></a>
+  <a href="#"><img src="https://img.shields.io/badge/maintained-yes-green"></a>
+</p>
+
+<p align="center">
+  <a href="#features">Features</a> •
+  <a href="#bot-commands">Bot Commands</a> •
+  <a href="#commands">Commands</a> •
+  <a href="#installation">Installation</a> •
+  <a href="#configuration">Configuration</a>
+</p>
+
+<p align="center">
+  <i>Launch-ready destructive Discord toolkit developed by Alive, founder of ApeX Development.</i>
+</p>
+
+---
+
+## Features
+
+## Bot Commands
+ - [x] Delete Channels
+ - [x] Delete All Channels
+ - [x] Ban All Members
+ - [x] Kick All Members
+ - [x] Mute All Members
+ - [x] Delete All Roles
+ - [x] Create Channels
+ - [x] Spam Messages
+ - [x] Channel Nuking
+ - [x] Give all admin
+ - [x] Give self admin
+ - [x] DM Users (Individual & Mass DM)
+ - [x] Nickname Management (Individual & Mass)
+ - [x] Server Customization (Rename, Icon, Banner, Description)
+ - [x] Role Management (Spam create & Strip roles)
+ - [x] Users in Voice channels control (Move All, Scatter)
+ - [x] Webhook Management (Nuke All Webhooks)
+ - [x] Emoji Management (Nuke All Emojis)
+ - [x] Sticker Management (Nuke All Stickers)
+ - [x] Invite Management (Nuke All Invites)
+ - [x] Thread Management (Nuke All Threads)
+ - [x] Bot Management (Kick All Bots)
+ - [x] Channel Shuffle (Random Reorder)
+ - [x] Ghost Ping / Mention Spam
+ - [x] Slowmode Control (Set All Channels)
+ - [x] Server Backup (Export structure to JSON)
+ - [x] Unban All Members
+
+## Soon
+
+- [x] Multi Lang support
+- [x] Clone/Backup server
+- [x] Proxies (SOCKS4/SOCKS5 via socks4.txt / socks5.txt)
+- [ ] Control/Nuke from console
+- [ ] Webpage interface
+
+***
+# Commands
+**[View all commands and usage →](COMMANDS.md)**
+
+For a complete list of all available commands with detailed descriptions and usage examples, see **[COMMANDS.md](COMMANDS.md)**
+
+***
+# Installation
+
+## Windows
+
+### Easy Method: (Windows)
+1. Clone the repository:
+```console
+git clone https://github.com/alivelyyy/ApeX-Nuker.git
+cd ApeX-Nuker
+```
+2. Run the installer:
+   - Double-click **`install.bat`** to install dependencies
+
+3. Configure `config.json` with your bot token and user ID
+4. Run **`run.bat`** to start the bot
+
+### Manual Method: (Windows)
+```console
+git clone https://github.com/alivelyyy/ApeX-Nuker.git
+cd ApeX-Nuker
+pip install -r requirements.txt
+python main.py
+```
+
+## Linux / Mac
+
+```console
+git clone https://github.com/alivelyyy/ApeX-Nuker.git
+cd ApeX-Nuker
+pip install -r requirements.txt
+python3 main.py
+```
+
+## Android (Termux)
+
+```console
+apt update && apt upgrade
+pkg install python git
+git clone https://github.com/alivelyyy/ApeX-Nuker.git
+cd ApeX-Nuker
+pip install -r requirements.txt
+python3 main.py
+```
+
+***
+# License
+This project is released under the [MIT License](LICENSE).
+
+# Configuration
+Edit `config.json` and configure your bot settings:
+```json
+{
+  "token": "BOT_TOKEN",
+  "prefix": ".!",
+  "owner_id": "YOUR_USER_ID_HERE",
+  "whitelist": [],
+  "language": "en",
+  "proxies": false
+}
+```
+
+## Configuration Options:
+- **`token`** (required): Your Discord bot token
+- **`prefix`** (optional, default: `.!`): Command prefix - Change this to customize your command prefix
+- **`owner_id`** (required): Your Discord user ID - The bot owner who has full access to all commands
+- **`whitelist`** (optional, default: `[]`): Array of user IDs who are authorized to use the bot
+  - Example: `"whitelist": [1304080189029875753, 987654321098765435]`
+  - Only the owner and whitelisted users can use bot commands
+  - Leave empty `[]` to only allow the owner
+- **`proxies`** (optional, default: `false`): Enable SOCKS proxy support. Set to `true` to load proxies from `socks4.txt` and `socks5.txt` — one `host:port` per line. A random proxy is picked on each startup.
+- **`language`** (optional, default: `"en"`): Bot language for messages and responses
+  - Available languages:
+    - `"en"` - English
+    - `"es"` - Spanish (Español)
+    - `"fr"` - French (Français)
+    - `"de"` - German (Deutsch)
+    - `"pt"` - Portuguese (Português)
+    - `"it"` - Italian (Italiana)
+    - `"ru"` - Russian (Русский)
+    - `"pl"` - Polish (Polski)
+    - `"nl"` - Dutch (Nederlands)
+    - `"uk"` - Ukrainian (Українська)
+    - `"sv"` - Swedish (Svenska)
+    - `"el"` - Greek (Ελληνικά)
+  - The bot will use the specified language for all messages, embeds, and responses
+  - If language file is not found, it will fallback to English
+
+***
+> [!WARNING]  
+> ⚠️ This is ApeX Nuker: an advanced destructive Discord toolkit. Use responsibly and only in servers where you have explicit permission. Alive and ApeX Development are not responsible for any misuse.

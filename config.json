@@ -1,0 +1,8 @@
+{
+  "token": "BOT_TOKEN",
+  "prefix": ".!",
+  "owner_id": "1304080189029875753",
+  "whitelist": [1304080189029875753],
+  "language": "en",
+  "proxies": false
+}
