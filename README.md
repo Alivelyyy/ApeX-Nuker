@@ -164,3 +164,12 @@ Edit `config.json` and configure your bot settings:
 ***
 > [!WARNING]  
 > ⚠️ This is ApeX Nuker: an advanced destructive Discord toolkit. Use responsibly and only in servers where you have explicit permission. Alive and ApeX Development are not responsible for any misuse.
+
+
+---
+
+## 📚 Full Project Documentation
+
+A complete **5-page engineering deep-dive** for this repo — overview & purpose, technology stack & architecture, feature-by-feature breakdown, code internals & systems design, and development timeline & resume highlights — is available in [`DOCUMENTATION.md`](DOCUMENTATION.md).
+
+*Part of the complete coding-history dossier generated on 2026-10-18.*
